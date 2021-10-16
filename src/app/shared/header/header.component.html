@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" [routerLink] = "'/'">Simonenko1030</a>
+    <div class="navbar" >
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink] = "'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">Информация<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink] = "'/purchases/item'" [routerLinkActive] = "'active'" [routerLinkActiveOptions]="{ exact: true }">Добавить<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink] = "'/purchases'" [routerLinkActive] = "'active'" [routerLinkActiveOptions]="{ exact: true }">Список покупок<span class="sr-only"></span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>

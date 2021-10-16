@@ -1,0 +1,39 @@
+{
+  "Purchases": [
+    {
+      "name": "Банан",
+      "amount": "1200",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 2
+    },
+    {
+      "name": "Арбуз",
+      "amount": "53",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 3
+    },
+    {
+      "name": "Сыр",
+      "amount": "5",
+      "status": "Куплено",
+      "bought": true,
+      "id": 4
+    },
+    {
+      "name": "1",
+      "amount": "3",
+      "status": "Куплено",
+      "bought": true,
+      "id": 5
+    },
+    {
+      "name": "цукцук",
+      "amount": "цукцу",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 6
+    }
+  ]
+}

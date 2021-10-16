@@ -1,0 +1,60 @@
+{
+  "purchases": [
+    {
+      "name": "sdfsdfsdf",
+      "amount": "157",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 2
+    },
+    {
+      "name": "тест тест",
+      "amount": "10",
+      "status": "Куплено",
+      "bought": true,
+      "id": 4
+    },
+    {
+      "name": "ааааа",
+      "amount": "2",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 5
+    },
+    {
+      "name": "бббббб",
+      "amount": "2",
+      "status": "Куплено",
+      "bought": true,
+      "id": 6
+    },
+    {
+      "name": "вввв",
+      "amount": "3",
+      "status": "Куплено",
+      "bought": true,
+      "id": 7
+    },
+    {
+      "name": "а",
+      "amount": "14",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 8
+    },
+    {
+      "name": "а",
+      "amount": "1555555",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 9
+    },
+    {
+      "name": "jhgjjhg",
+      "amount": "56",
+      "status": "Не куплено",
+      "bought": false,
+      "id": 10
+    }
+  ]
+}

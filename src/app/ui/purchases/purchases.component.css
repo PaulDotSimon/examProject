@@ -1,0 +1,10 @@
+.deleteButton:hover{
+  background-color: rgb(255, 70, 70);
+}
+
+.statusBought{
+  background-color: rgb(232, 255, 198);
+}
+.statusNotBought{
+    background-color: rgb(255, 187, 182);
+}

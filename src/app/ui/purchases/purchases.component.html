@@ -1,0 +1,33 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <table class="table col-lg-10 col-md-8 col-sm-6 col-3">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Наименование товара</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+             <tr *ngFor="let purchase of purchases" class = "mt-1">
+                <td>{{ purchase.id }}</td>
+                <td (click)="linkToItem(purchase.id)" >{{ purchase.name }}</td>
+
+                <td >{{ purchase.amount }}</td>
+
+                <td (click)="changeStatus(purchase.id)" 
+                [ngClass]="{
+                    'statusBought':
+                    purchase.bought,
+                    'statusNotBought':
+                    !purchase.bought
+                  }"
+                >{{ purchase.status }}</td>
+
+                <button class="ml-2 btn btn-danger btn-sm" style="background-color: rgba(255, 0, 0, 0.651);"  (click) = "onDeletePurchase(purchase.id)">Удалить</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

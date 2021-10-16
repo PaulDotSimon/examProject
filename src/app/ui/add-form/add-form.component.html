@@ -1,0 +1,48 @@
+<div class="container-fluid wx-auto">
+    <div class="row">
+        <form [formGroup]="purchForm">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="form-group">
+                        <label for="name">Продукт</label>
+                        <input type="text" class="form-control" id="name" placeholder="Обязательное поле, длинной до 100 символов."
+                            formControlName="name" 
+                            [ngClass]="{
+                                'error':
+                                purchForm.get('name')?.invalid &&
+                                purchForm.get('name')?.touched
+                              }"
+                            />
+                        
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="form-group">
+                        <label for="amount">Количество продукта</label>
+                        <input type="text" class="form-control" id="amount" placeholder="Обязательное поле, длинной до 100 символов."
+                            formControlName="amount"
+                            [ngClass]="{
+                                'error':
+                                purchForm.get('amount')?.invalid &&
+                                purchForm.get('amount')?.touched
+                              }"
+                             />
+                        
+                    </div>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-success"  [disabled]="purchForm.invalid" (click) = "addPurchase()">
+                        Сохранить
+                    </button>
+                    <button class="btn btn-secondary ms-2" (click) = "getClear()">Очистить форму</button>
+                    <button class="btn btn-danger ms-2" *ngIf="id" (click) = "onDeletePurchase()">
+                        Удалить
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
